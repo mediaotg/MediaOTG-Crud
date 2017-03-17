@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <!--<script type="text/javascript" src="bower_components/tinymce/tinymce.js"></script>-->
+  <script type="text/javascript" src="assets/js/tiny-mce/bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="assets/js/tiny-mce/bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+  <!--<script type="text/javascript" src="app.js"></script>-->
+</head>
+<body ng-app="myApp">
+  <form method="post" ng-controller="TinyMceController">
+    <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+    <button ng-click="getContent()">Get content</button>
+    <button ng-click="setContent()">Set content</button>
+  </form>
+
+  <script>
+	myAppModule.controller('myApp', function($scope) {
+	    $scope.tinymceOptions = {
+	        resize: false,
+	        width: 400,  // I *think* its a number and not '400' string
+	        height: 300,
+	        plugins: 'print textcolor',
+	        toolbar: "undo redo styleselect bold italic print forecolor backcolor"
+	    };
+	    $scope.getContent = function(){
+	    	console.log('content = ' + $scope.tinymceModel );
+	    }
+	});
+  </script>
+</body>

@@ -1,0 +1,21 @@
+{
+  "name": "tiny-mce",
+  "authors": [
+    "Media OTG <esty.mediaotg@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-tinymce": "^0.0.18"
+  }
+}

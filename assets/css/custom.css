@@ -1,0 +1,28 @@
+.width-30-pct{
+	width: 40%;
+}
+.text-align-center{
+	text-align: center;
+}
+.margin-bottom-1em{
+	margin-bottom: 1em;
+}
+.modal{
+	padding: 20px 30px 0px;  
+}
+.thumbnail{
+	width: 100px;
+	vertical-align: center;
+}
+.thumbnail img{
+	width: 100%;
+	max-width: 50px;
+}
+.img-wrapper{
+	width: 85px;
+	overflow: hidden;
+	float: left;
+}
+.img-wrapper img{
+	width: auto;
+}
